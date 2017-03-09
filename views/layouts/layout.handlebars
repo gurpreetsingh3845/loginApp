@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel  ="stylesheet" href = "/css/bootstrap.css"/>
+<link rel  ="stylesheet" href = "/css/style.css"/>
+<title>Login application</title>
+</head>
+<body>
+<div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            
+            {{#if user}}
+            <li role="presentation" ><a href="/">Dashboard</a></li>
+            <li role="presentation"><a href="/users/Logout">Logout</a></li>
+
+            {{else}}
+               <li role="presentation"><a href="/users/login">Login</a></li>
+                <li role="presentation"><a href="/users/register">Register</a></li>
+            {{/if}}
+
+          </ul>
+        </nav>
+        <h3 class="text-muted">Login Applicaiton</h3>
+      </div>
+
+
+      <div class="row">
+        <div class="col-lg-12">
+        {{{body}}}   
+        </div>
+
+        
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2016 Company,Login Inc.</p>
+      </footer>
+
+    </div>
+
+
+
+</body>
+</html>
